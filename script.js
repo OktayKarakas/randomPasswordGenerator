@@ -98,13 +98,14 @@ function generateRandomPassword() {
     characters[Math.floor(Math.random() * characters.length)]
   let randomPasswordSecond =
     characters[Math.floor(Math.random() * characters.length)]
-
-  for (let i = 0; i < 14; i++) {
-    randomPasswordFirst +=
+  for (let i = 0; randomPasswordFirst.length < 15; i++) {
+    randomPasswordFirst =
+      randomPasswordFirst +
       characters[Math.floor(Math.random() * characters.length)]
   }
-  for (let i = 0; i < 14; i++) {
-    randomPasswordSecond +=
+  for (let i = 0; randomPasswordSecond.length < 15; i++) {
+    randomPasswordSecond =
+      randomPasswordSecond +
       characters[Math.floor(Math.random() * characters.length)]
   }
   passwordFirst.textContent = randomPasswordFirst
