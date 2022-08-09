@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #1e2938;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+.hero {
+  margin-top: 150px;
+  margin-left: 75px;
+}
+.container {
+  margin: 50px auto;
+  font-size: 30px;
+}
+h1 {
+  color: white;
+}
+.heading-2 {
+  display: block;
+  color: rgb(75, 221, 135);
+}
+h2 {
+  color: white;
+  margin: 30px 0;
+  font-size: 25px;
+}
+button {
+  padding: 15px 9px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  font-size: 25px;
+  background-color: rgb(75, 221, 135);
+  color: white;
+  font-weight: 200;
+  display: block;
+  cursor: pointer;
+}
+.break-line {
+  width: 75%;
+  border-color: gray;
+  opacity: 0.4;
+}
+button:hover {
+  background-color: #3e8e41;
+}
+button:active {
+  background-color: #3e8e41;
+  transform: translateY(1.5px);
+  box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.75);
+}
+.passwords {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  width: 50%;
+  margin-top: 50px;
+}
+.passwords p {
+  margin-right: 75px;
+  padding: 25px 30px;
+  display: inline-block;
+  background-color: rgb(40, 53, 73);
+  border-radius: 5px;
+  color: rgb(75, 221, 135);
+}
+.footer {
+  background-color: black;
+  width: 100%;
+  text-align: center;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  padding: 10px 0px;
+}
+
+@media screen and (max-width: 700px) {
+  .hero {
+    margin-left: 15px;
+  }
+  .container {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 15px;
+  }
+  button {
+    font-size: 15px;
+    margin-top: 25px;
+  }
+  .passwords {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 15px;
+  }
+  .passwords p {
+    margin-right: 75px;
+    margin-top: 20px;
+    font-size: 15px;
+    padding: 20px 9px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .passwords p {
+    white-space: nowrap;
+  }
+}
